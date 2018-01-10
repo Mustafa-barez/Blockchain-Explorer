@@ -24,7 +24,7 @@
           console.log("last block is " + number);
           for (var i=0; i<10; i++) {
             ethers.blockchain.getBlock(number-i).then(function(block){
-              printBLock(block);
+              printBlock(block);
             });
           }
         }
